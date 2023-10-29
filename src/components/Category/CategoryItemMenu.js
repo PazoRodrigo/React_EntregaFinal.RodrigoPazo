@@ -8,7 +8,6 @@ const CategoryItemMenu = ({ categoria }) => {
     <>
       <Link
         className="CategoryItemMenu"
-        // key={categoria.categoriaId}
         state={{ categoria: categoria }}
         to={`/Product/ProductListContainer/${categoria.categoriaId}`}
       >

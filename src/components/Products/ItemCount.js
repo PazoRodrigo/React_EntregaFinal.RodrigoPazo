@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import Boton from "./Boton";
 import Contador from "./Contador";
 import { CartContext } from "../Context/CartContext";
+import Toast from "../Toast/Toast";
 
 const ItemCount = ({ producto }) => {
   const { agregarProducto } = useContext(CartContext);
@@ -18,8 +19,27 @@ const ItemCount = ({ producto }) => {
     if (cantClicks > 0) {
       producto.cant = cantClicks;
       agregarProducto((oldData) => [...oldData, producto]);
+      //  Toast
+      setIsOpen(true);
+      setMensaje("Producto añadido correctamente");
+      setEstado("success");
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 2000);
+    } else {
+      setIsOpen(true);
+      setMensaje("La cantidad de Producto debe ser mayor a 0");
+      setEstado("error");
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 2000);
     }
   };
+
+  const [mensaje, setMensaje] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [estado, setEstado] = useState("");
+
   return (
     <>
       <div className="alineadoRow">
@@ -33,6 +53,7 @@ const ItemCount = ({ producto }) => {
       >
         Agregar al carro
       </button>
+      <Toast mensaje={mensaje} isOpen={isOpen} estado={estado} />
     </>
   );
 };

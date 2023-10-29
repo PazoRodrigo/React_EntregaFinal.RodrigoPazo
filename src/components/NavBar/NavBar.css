@@ -35,7 +35,6 @@
   justify-content: flex-end;
   flex-direction: row;
   padding-right: 15px;
-
   width: 20%;
 }
 .links ul {
@@ -63,6 +62,18 @@
 }
 .iconoLinksMenu:hover {
   color: darkblue;
+  width: 31px;
+  height: 31px;
+}
+.iconoLinkCarritoConItems {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  text-decoration: none;
+  color: green;
+}
+.iconoLinkCarritoConItems:hover {
+  color: darkgreen;
   width: 31px;
   height: 31px;
 }

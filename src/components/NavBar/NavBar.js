@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,6 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [navegacion, setNavegacion] = useState([]);
-
   useEffect(() => {
     //  Constante de acceso a la Base de datos
     const db = getFirestore();
@@ -27,6 +26,11 @@ const NavBar = () => {
       );
     });
   }, []);
+
+  const TieneItemsEnCarrito = () => {
+    //TODO: Remplazar con longitud del carrito
+    return true;
+  };
 
   return (
     <>
@@ -68,7 +72,11 @@ const NavBar = () => {
           <Link to="../Pages/TuCarrito">
             <FontAwesomeIcon
               icon={faCartArrowDown}
-              className="iconoLinksMenu"
+              className={
+                TieneItemsEnCarrito()
+                  ? "iconoLinkCarritoConItems"
+                  : "iconoLinksMenu"
+              }
               title="Tu Carrito"
             />
           </Link>

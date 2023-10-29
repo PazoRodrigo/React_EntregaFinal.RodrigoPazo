@@ -38,11 +38,6 @@ const Category = () => {
           justifyContent: "center",
         }}
       >
-        {/* <div>
-          {productos.map((item) => {
-            return <Product key={item.productoId} producto={item} />;
-          })}
-        </div> */}
         {productos.length > 0 ? (
           productos.map((item) => {
             return <Product key={item.productoId} producto={item} />;

@@ -1,0 +1,84 @@
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  background-color: black;
+  color: blanchedalmond;
+}
+.letraMarca {
+  font-size: 2em;
+  color: blue;
+}
+.navBarMain {
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+  border-bottom: 1px solid black;
+}
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+  width: 20%;
+}
+.empresa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-right: 15px;
+
+  width: 20%;
+}
+.links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  flex: 1 1;
+}
+
+.iconoFiltroMenu {
+  width: 25px;
+  height: 25px;
+}
+.iconoFiltroMenu:hover {
+  color: blue;
+  width: 31px;
+  height: 31px;
+}
+.iconoLinksMenu {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  text-decoration: none;
+}
+.iconoLinksMenu:hover {
+  color: darkblue;
+  width: 31px;
+  height: 31px;
+}
+.iconoMarca {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: blue;
+}
+.iconoTodosMenu {
+  margin: 5px;
+  text-decoration: none;
+}
+.iconoTodosMenu:hover {
+  color: brown;
+  width: 31px;
+  height: 31px;
+}

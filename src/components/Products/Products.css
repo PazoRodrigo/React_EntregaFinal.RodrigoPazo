@@ -1,0 +1,33 @@
+.ProductListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProductItemMenu {
+  padding-top: 8px;
+  width: 500px;
+  border: 1px solid brown;
+  margin: 25px;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.BtnAgregarAlCarro {
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+}
+.BtnAgregarQuitar {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+}

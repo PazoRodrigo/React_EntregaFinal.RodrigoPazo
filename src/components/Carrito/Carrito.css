@@ -1,0 +1,13 @@
+.CarritoList {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.CarritoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 2px dotted darkblue;
+}

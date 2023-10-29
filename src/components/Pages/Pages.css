@@ -1,0 +1,51 @@
+.pages {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+/* TuUsuario */
+.tuUsuarioForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 50vh;
+}
+.contenedortuUsuarioForm {
+  width: 48%;
+  height: 50vh;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-top: 20px;
+  margin: 3px;
+  box-shadow: 5px 3px 3px gray;
+}
+.formTitulo {
+  font-size: 2.5em;
+  text-align: center;
+}
+.formContenido {
+  padding-left: 30px;
+}
+.formBtnSubmit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 15px;
+}
+/* TuCarrito */
+.tuCarritoForm {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 1px solid blue;
+}
+.tuCarritoFormCerrar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
